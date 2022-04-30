@@ -3,7 +3,6 @@ if "testfile.txt.a" in listfiles():
 if "testfile.txt.b" in listfiles():
   removefile("testfile.txt.b")
 myfile=ABopenfile("testfile.txt",True)  #Create an AB file
-myfile2=ABopenfile("testfile.txt",True)
 
 # I should get 'SE' when reading an empty file...
 #assert('SE' == myfile.readat(None,0))
@@ -15,8 +14,8 @@ myfile2.writeat("Stest12345E",0)
 #assert('SE' == myfile.readat(None,0))
 
 myfile.readat(0,12)
-myfile2.readat(1,12)
+
 
 #Close the file
 myfile.close()
-myfile2.close()
+
