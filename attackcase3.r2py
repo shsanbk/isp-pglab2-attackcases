@@ -29,8 +29,8 @@ myfile8.writeat("Es",7)
 #assert('SE' == myfile.readat(None,0))
 
 myfile.readat(0,12)
-myfile2.reaat(1,12)
-myfile3.readat(2,12)
+myfile2.reaat(0,3)
+myfile3.readat(0,3)
 
 #Close the file
 myfile.close()
