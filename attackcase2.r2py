@@ -1,8 +1,4 @@
 myfile=ABopenfile("testfile.txt",True)
 removefile("testfile.txt")
 myfile=ABopenfile("testfile.txt",True)
-
-try:
- myfile.writeat("Se",0)
-except: 
- pass
+myfile.writeat("Se",0)
