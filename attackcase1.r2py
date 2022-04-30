@@ -9,12 +9,11 @@ myfile=ABopenfile("testfile.txt",True)  #Create an AB file
 
 # put some valid data in the file.
 myfile.writeat("Stest12345E",0)
-myfile2.writeat("Stest12345E",0)
+
 # I should still get 'SE' because the file wasn't closed.
 #assert('SE' == myfile.readat(None,0))
 
 myfile.readat(0,12)
-
 
 #Close the file
 myfile.close()
