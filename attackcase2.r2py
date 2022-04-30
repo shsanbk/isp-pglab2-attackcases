@@ -29,3 +29,11 @@ myfile8.writeat("Es",7)
 
 #Close the file
 myfile.close()
+myfile1.close()
+myfile2.close()
+myfile3.close()
+myfile4.close()
+myfile5.close()
+myfile6.close()
+myfile7.close()
+myfile8.close()
