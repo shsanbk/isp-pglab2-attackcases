@@ -9,13 +9,20 @@ myfile=ABopenfile("testfile.txt",True)  #Create an AB file
 
 # put some valid data in the file.
 myfile.writeat("Stest12345E",0)
-myfile.writeat("Se",1)
-myfile.writeat("sE",2)
-myfile.writeat("se",3)
-myfile.writeat("es",4)
-myfile.writeat("ES",5)
-myfile.writeat("eS",6)
-myfile.writeat("Es",7)
+myfile2=ABopenfile("testfile.txt",True)
+myfile2.writeat("Se",1)
+myfile3=ABopenfile("testfile.txt",True)
+myfile3.writeat("sE",2)
+myfile4=ABopenfile("testfile.txt",True)
+myfile4.writeat("se",3)
+myfile5=ABopenfile("testfile.txt",True)
+myfile5.writeat("es",4)
+myfile6=ABopenfile("testfile.txt",True)
+myfile6.writeat("ES",5)
+myfile7=ABopenfile("testfile.txt",True)
+myfile7.writeat("eS",6)
+myfile8=ABopenfile("testfile.txt",True)
+myfile8.writeat("Es",7)
 
 # I should still get 'SE' because the file wasn't closed.
 #assert('SE' == myfile.readat(None,0))
