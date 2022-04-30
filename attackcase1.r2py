@@ -1,8 +1,3 @@
-if "testfile.txt.a" in listfiles():
- removefile("testfile.txt.a")
-if "testfile.txt.b" in listfiles():
- removefile("testfile.txt.b")
-
 myfile=ABopenfile("testfile.txt",True)
-myfile.readat(8,0)
+myfile.readat(0,9)
 myfile.close()
