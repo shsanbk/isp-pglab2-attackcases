@@ -1,0 +1,44 @@
+
+if "testfile.txt.a" in listfiles():
+  removefile("testfile.txt.a")
+if "testfile.txt.b" in listfiles():
+  removefile("testfile.txt.b")
+myfile=ABopenfile("testfile.txt",True)  #Create an AB file
+
+# I should get 'SE' when reading an empty file...
+#assert('SE' == myfile.readat(None,0))
+
+# put some valid data in the file.
+myfile.writeat("Stest12345E",0)
+myfile2=ABopenfile("testfile.txt",True)
+myfile2.writeat("Se",1)
+myfile3=ABopenfile("testfile.txt",True)
+myfile3.writeat("sE",2)
+myfile4=ABopenfile("testfile.txt",True)
+myfile4.writeat("se",3)
+myfile5=ABopenfile("testfile.txt",True)
+myfile5.writeat("es",4)
+myfile6=ABopenfile("testfile.txt",True)
+myfile6.writeat("ES",5)
+myfile7=ABopenfile("testfile.txt",True)
+myfile7.writeat("eS",6)
+myfile8=ABopenfile("testfile.txt",True)
+myfile8.writeat("Es",7)
+
+# I should still get 'SE' because the file wasn't closed.
+#assert('SE' == myfile.readat(None,0))
+
+myfile.readat(0,12)
+myfile2.reaat(1,12)
+myfile3.readat(2,12)
+
+#Close the file
+myfile.close()
+myfile1.close()
+myfile2.close()
+myfile3.close()
+myfile4.close()
+myfile5.close()
+myfile6.close()
+myfile7.close()
+myfile8.close()
