@@ -15,7 +15,7 @@ myfile2.writeat("Stest12345E",0)
 #assert('SE' == myfile.readat(None,0))
 
 myfile.readat(0,12)
-myfile2.readat(0,12)
+myfile2.readat(1,12)
 
 #Close the file
 myfile.close()
