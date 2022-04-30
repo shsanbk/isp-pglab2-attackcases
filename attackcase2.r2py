@@ -5,4 +5,4 @@ myfile=ABopenfile("testfile.txt",True)
 try:
  myfile.writeat("Se",0)
 except: 
- log("Valid Data write to a file is unsuccessfull!")
+ pass
